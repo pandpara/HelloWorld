@@ -9,7 +9,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
 
 
 RUN wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py && \
-    pip3 install numpy==1.16.2 flask gevent gunicorn pandas dill
+    pip3 install numpy==1.16.2 flask gevent gunicorn pandas dill codeguru_profiler_agent
       
         
 ENV PYTHONUNBUFFERED=TRUE
